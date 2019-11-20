@@ -39,14 +39,16 @@ span {
     transform: scale(1)
 }
 
-#profile_section {
-    padding: 10em 0;
+#profile-section,
+#skills-section {
+    padding: 7em 0;
     clear: both;
     position: relative;
 }
 
 @media screen and (max-width:768px) {
-    #profile_section {
+    #profile-section,
+    #skill-section {
         padding: 5em 0
     }
 }
@@ -128,12 +130,27 @@ span {
     position: relative
 }
 
+img {
+    border: 0;
+    vertical-align: middle;
+    padding: 2em 0;
+}
+
+.profile-pic {
+    display: block;
+    width: 100%;
+}
+
 .bold {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    font-size: 250px;
+    font-size: 200px;
     color: #f0f0f0;
     font-weight: 700
+}
+
+.col-md-push-1 {
+    left: 8.33333%
 }
