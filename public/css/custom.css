@@ -48,7 +48,9 @@ a:hover {
 }
 
 #profile-section,
-#skills-section {
+#skills-section,
+#portfolio-section,
+#blog-section {
     padding: 7em 0;
     clear: both;
     position: relative;
@@ -179,4 +181,53 @@ img {
     background: 0 0;
     color: #4d4d4d;
     border: 1px solid #4d4d4d;
+}
+
+.services-flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    width: 100%
+}
+
+.services-flex .one-third,
+.services-flex .one-fourth {
+    display: inline-block;
+}
+
+.services-flex .one-third {
+    width: 55%;
+    padding: 3em 2em 3em 0;
+}
+
+.services-flex .one-fourth {
+    width: 45%;
+}
+
+.services {
+    margin-bottom: 4em
+}
+
+.services h3 {
+    font-family: karla, Arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700
+}
+
+.services ul li {
+    margin-bottom: 10px
+}
+
+.services-img {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
 }
