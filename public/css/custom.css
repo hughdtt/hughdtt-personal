@@ -274,3 +274,13 @@ img {
     background-repeat: no-repeat;
     position: relative;
 }
+
+#footer {
+    padding: 8em 0;
+    display: block;
+    width: 100%;
+}
+
+.col-pb-sm {
+    margin-bottom: 5em;
+}
