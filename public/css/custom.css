@@ -50,7 +50,7 @@ a:hover {
 #profile-section,
 #skills-section,
 #portfolio-section,
-#blog-section {
+#testimonial-section {
     padding: 7em 0;
     clear: both;
     position: relative;
@@ -273,6 +273,22 @@ img {
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
+}
+
+.testimony blockquote {
+    border: none;
+}
+
+.testimony blockquote p {
+    font-family: playfair display, Georgia, serif;
+    color: #000;
+    font-size: 30px;
+}
+
+.testimony blockquote span {
+    font-family: playfair display, Georgia, serif;
+    color: #000;
+    font-size: 30px;
 }
 
 #footer {
