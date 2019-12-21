@@ -10,10 +10,17 @@
 
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:400,700">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!--Javascript for Animations-->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 
 <body>
@@ -34,26 +41,27 @@
         <div id="profile-section">
             <div class="container">
                 <div class="row text-center">
-                    <h2 class="bold">
+                    <h2 class="bold wow fadeInUp" data-wow-duration="1.5s">
                         About
                     </h2>
                 </div>
 
-                <div class="row">
+                <div class="row wow fadeInUp" data-wow-duration="1.5s">
                     <div class="col-md-5">
                         <img src="img/profile_pic_2.jpg" class="profile-pic" alt="profile-pic1">
                     </div>
 
                     <div class="col-md-6 col-md-push-1">
-                        <div class="profile-desc ">
+                        <div class="profile-desc">
                             <h2>
                                 <span>
                                     Hugh Duong-Tran-Tien
                                 </span>
                             </h2>
+
                             <div class="desc">
                                 <div class="rotate">
-                                    <h2 class="heading ">
+                                    <h2 class="heading">
                                         About
                                     </h2>
                                 </div>
@@ -87,11 +95,11 @@
         <div id="skills-section">
             <div class="container">
                 <div class="row text-center">
-                    <h2 class="bold">
+                    <h2 class="bold wow fadeInUp" data-wow-duration="1.5s">
                         Services
                     </h2>
                 </div>
-                <div class="row">
+                <div class="row wow fadeInUp" data-wow-duration="1.5s">
                     <div class="col-md-12">
                         <div class="services-flex">
                             <div class="one-third">
@@ -111,12 +119,11 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="services">
-                                            <h3>1 - Web Development</h3>
+                                            <h3>1 - Front-End Development</h3>
                                             <ul>
-                                                <li>HTML / CSS</li>
+                                                <li>HTML</li>
+                                                <li>CSS</li>
                                                 <li>Javascript</li>
-                                                <li>MySQL </li>
-                                                <li>Django Framework</li>
                                             </ul>
                                         </div>
                                         <div class="services">
@@ -125,18 +132,24 @@
                                                 <li>Leadership</li>
                                                 <li>Schedule Management</li>
                                                 <li>Negotiation </li>
-                                                <li>Task Managment</li>
                                             </ul>
-
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="services">
-                                            <h3>2 - Software Development</h3>
+                                            <h3>2 - Back-End Development</h3>
+                                            <ul>
+                                                <li>MySQL</li>
+                                                <li>Django Framework</li>
+                                                <li>Node. JS </li>
+                                            </ul>
+                                        </div>
+                                        <div class="services">
+                                            <h3>4 - Software Development</h3>
                                             <ul>
                                                 <li>Java</li>
                                                 <li>C#</li>
-                                                <li>Python </li>
+                                                <li>Python</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -154,17 +167,17 @@
         <div id="portfolio-section">
             <div class="container">
                 <div class="row text-center">
-                    <h2 class="bold">
+                    <h2 class="bold wow fadeInUp" data-wow-duration="1.5s">
                         Works
                     </h2>
                 </div>
-                <div class="row">
+                <div class="row wow fadeInUp" data-wow-duration="1.5s">
                     <div class="col-md-12 col-md-offset-0 text-center intro-heading">
                         <span> Portfolio </span>
                         <h2> Recent Projects </h2>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row wow fadeInUp" data-wow-duration="1.5s">
                     <div class="col-md-12">
                         <div class="rotate">
                             <h2 class="heading">
@@ -173,7 +186,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row wow fadeInUp" data-wow-duration="1.5s">
                     <div class="col-md-12">
                         <div class="work-entry">
                             <a class="work-img" style="background-image: url(img/image10.jpg);">
@@ -188,17 +201,17 @@
         <div id="testimonial-section">
             <div class="container">
                 <div class="row text-center">
-                    <h2 class="bold">
+                    <h2 class="bold wow fadeInUp" data-wow-duration="1.5s">
                         Testimonies
                     </h2>
                 </div>
-                <div class="row">
+                <div class="row wow fadeInUp" data-wow-duration="1.5s">
                     <div class="col-md-12 col-md-offset-0 text-center intro-heading">
                         <span> Testimonies </span>
                         <h2> Clients Says </h2>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row wow fadeInUp" data-wow-duration="1.5s">
                     <div class="col-md-12">
                         <div class="rotate">
                             <h2 class="heading">
@@ -207,7 +220,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row wow fadeInUp" data-wow-duration="1.5s">
                     <div class="col-md-12 text-center">
                         <div class="testimony">
                             <blockquote>
@@ -224,39 +237,39 @@
         <footer>
             <div id="footer"></div>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-pb-sm">
-                        <div class="row">
-                            <div class="col-md-10">
+                <div class="row ">
+                    <div class="col-md-4 col-pb-sm ">
+                        <div class="row ">
+                            <div class="col-md-10 ">
                                 <h2>Let's Talk</h2>
                                 <p>Have an idea for a Project? <br> I'm always interested in having a chat!</p>
                                 <p>
-                                    <a href="#">hugh.dtt@gmail.com</a>
+                                    <a href="# ">hugh.dtt@gmail.com</a>
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-pb-sm">
-                        <div class="row">
-                            <div class="col-md-10">
+                    <div class="col-md-4 col-pb-sm ">
+                        <div class="row ">
+                            <div class="col-md-10 ">
                                 <h2>Latest Blog</h2>
                                 <p>Find out what I get up to in my spare time.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-pb-sm">
-                        <div class="row">
-                            <div class="col-md-10">
+                    <div class="col-md-4 col-pb-sm ">
+                        <div class="row ">
+                            <div class="col-md-10 ">
                                 <h2>Third</h2>
                                 <p>Third.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 text-center">
+                <div class="row ">
+                    <div class="col-md-12 text-center ">
                         <p>Copyright ©
-                            <script type="text/javascript">
+                            <script type="text/javascript ">
                                 document.write(new Date().getFullYear());
                             </script> All rights reserved | Hugh Duong-Tran-Tien </p>
                     </div>
