@@ -28,12 +28,6 @@
         font-weight: 400;
         font-family: karla, Arial, sans-serif;
     }
-    /* a {
-    color: ##007bff;
-} */
-    /* a:hover {
-    color: ##007bff;
-} */
     
     #page {
         position: relative;
@@ -107,6 +101,11 @@
         height: 1px;
     }
     
+    .about-placement,
+    .service-placement {
+        padding-top: 40px;
+    }
+    
     .profile-desc {
         padding-top: 3em;
     }
@@ -160,8 +159,7 @@
     
     .profile-pic {
         display: block;
-        width: 100%;
-        height: 100%;
+        background-size: cover;
     }
     
     .bold {
@@ -265,6 +263,7 @@
     
     .services-flex .one-fourth {
         width: 45%;
+        left: 2%
     }
     
     .services {
@@ -283,11 +282,17 @@
     }
     
     .services-img {
-        background-size: cover;
+        background-size: auto 85%;
         background-position: center center;
         background-repeat: no-repeat;
         position: relative;
         object-fit: cover;
+    }
+    
+    @media screen and (max-width:768px) {
+        .services-img {
+            opacity: 0;
+        }
     }
     
     .intro-heading {
@@ -341,7 +346,7 @@
         object-fit: cover;
     }
     
-    .work-entry .work-img:hover .work-img {
+    .work-entry:hover .work-img {
         opacity: 0.3;
     }
     
