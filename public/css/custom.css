@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: karla, Arial, sans-serif;
     line-height: 1.8;
@@ -25,13 +29,15 @@ span {
     font-family: karla, Arial, sans-serif
 }
 
-a {
-    color: #ca82f8;
-}
 
-a:hover {
-    color: #ca82f8;
-}
+/* a {
+    color: ##007bff;
+} */
+
+
+/* a:hover {
+    color: ##007bff;
+} */
 
 #page {
     position: relative;
@@ -157,7 +163,7 @@ img {
     top: 0;
     left: 0;
     right: 0;
-    font-size: 200px;
+    font-size: 250px;
     color: #f0f0f0;
     font-weight: 700
 }
@@ -177,10 +183,34 @@ img {
     padding: 8px 20px;
 }
 
+.btn-primary {
+    background: #007bff;
+    color: #fff;
+    border: 2px solid #007bff
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background: #007bff!important;
+    border-color: #007bff!important
+}
+
 .btn-primary.btn-outline {
     background: 0 0;
     color: #4d4d4d;
-    border: 1px solid #4d4d4d;
+    border: 1px solid #d9d9d9
+}
+
+.btn-primary.btn-outline:hover,
+.btn-primary.btn-outline:focus,
+.btn-primary.btn-outline:active {
+    background: #007bff;
+    color: #fff
+}
+
+.social-icons {
+    font-size: 18px;
 }
 
 .services-flex {
