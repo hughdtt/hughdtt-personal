@@ -1,91 +1,24 @@
-    html {
-        scroll-behavior: smooth;
-    }
-    
-    body {
-        font-family: karla, Arial, sans-serif;
-        line-height: 1.8;
-        font-size: 17px;
-        font-weight: 400;
-        background: #fafafa;
-        color: gray;
-    }
-    
-    html,
-    body {
-        height: 100%;
-        margin: 0;
-    }
-    
-    .header-menu,
-    footer {
-        display: flex;
-        align-items: center;
-        width: 100%;
-    }
-    
-    .header-menu {
-        justify-content: flex-end;
-        height: 60px;
-        background: #1c87c9;
-        color: #fff;
-    }
-    
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        color: rgba(0, 0, 0, .8);
-        font-family: playfair display, Georgia, serif;
-        margin: 0 0 30px;
-    }
-    
-    p,
-    span {
-        margin-bottom: 1.5em;
-        font-weight: 400;
-        font-family: karla, Arial, sans-serif;
-    }
-    
-    .btn {
-        margin-right: 4px;
-        margin-bottom: 4px;
-        font-size: 13px !important;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        border-radius: 1px;
-        padding: 8px 20px;
-    }
-    
-    .btn-primary {
-        background: #007bff;
-        color: #fff;
-        border: 2px solid #007bff;
-    }
-    
-    .btn-primary:hover,
-    .btn-primary:focus,
-    .btn-primary:active {
-        background: #007bff!important;
-        border-color: #007bff!important
-    }
-    
-    .btn-primary.btn-outline {
-        background: 0 0;
-        color: #4d4d4d;
-        border: 1px solid #d9d9d9;
-    }
-    
-    .btn-primary.btn-outline:hover,
-    .btn-primary.btn-outline:focus,
-    .btn-primary.btn-outline:active {
-        background: #007bff;
-        color: #fff;
-    }
-    
-    .social-icons {
-        font-size: 18px;
-    }
+ html,
+ body {
+     height: 100%;
+     margin: 0;
+ }
+ 
+ .header-menu,
+ footer {
+     display: flex;
+     align-items: center;
+     width: 100%;
+ }
+ 
+ .header-menu {
+     justify-content: flex-end;
+     height: 60px;
+     background: #1c87c9;
+     color: #fff;
+ }
+ 
+ section {
+     display: grid;
+     grid-template-rows: 20% 25% 25% 20%;
+ }
