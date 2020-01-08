@@ -1,24 +1,9 @@
- html,
- body {
-     height: 100%;
-     margin: 0;
- }
- 
- .header-menu,
- footer {
-     display: flex;
-     align-items: center;
-     width: 100%;
- }
- 
- .header-menu {
-     justify-content: flex-end;
-     height: 60px;
-     background: #1c87c9;
-     color: #fff;
- }
- 
- section {
-     display: grid;
-     grid-template-rows: 20% 25% 25% 20%;
- }
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 70%;
+    margin: auto;
+}
