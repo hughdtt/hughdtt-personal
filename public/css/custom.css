@@ -63,7 +63,7 @@ span {
     #skills-section,
     #portfolio-section,
     #testimonial-section {
-        padding: 2em 0
+        padding: 1em 0
     }
 }
 
@@ -401,6 +401,26 @@ img {
     font-family: playfair display, Georgia, serif;
     color: #000;
     font-size: 26px;
+}
+
+@media screen and (max-width:768px) {
+    .testimony blockquote p {
+        font-family: karla, Arial, sans-serif;
+        line-height: 1.8;
+        font-size: 17px;
+        font-weight: 400;
+        background: #fafafa;
+        color: gray;
+    }
+    
+    .testimony blockquote span {
+        font-family: karla, Arial, sans-serif;
+        line-height: 1.8;
+        font-size: 17px;
+        font-weight: 400;
+        background: #fafafa;
+        color: gray;
+    }
 }
 
 #footer {
