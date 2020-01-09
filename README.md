@@ -8,7 +8,6 @@ documentation https://docs.gitlab.com/ce/user/project/pages/.
 
 ## Tools
 - HTML/ CSS
-- Bootstrap 4
 - Transitions done with wow.js
     - Learn more about it here: https://wowjs.uk/
 - Template/ Inspiration: https://colorlib.com/preview/#noah
