@@ -2,27 +2,18 @@
 
 :root {
     --font-color: #495057;
+    --nav-font-color: white;
     --heading-color: #343a40;
     --background: white;
     --dark-font-color: #1b1d25;
     --medium-font-color: #60656c;
-    --light-font-color: #787f87;
-    --light-background: #f6f8fb;
-    --lighter-background: #e6e8eb;
     --border: #d6d9de;
-    --link-color: #5c7cfa;
-    --link-color-darker: #3b5bdb;
-    --navbar-color: #white;
-    --blockquote: #edf2ff;
-    --transparent-text: rgba(0, 0, 0, 0.7);
-    --transparent-bg: rgba(0, 0, 0, 0.05);
-    --light-transparent-bg: rgba(255, 255, 255, 0.1);
-    --code-font-family: Menlo, 'Roboto Mono', Courier New, monospace;
+    --link-color: #107896;
+    --link-color-darker: #71c9ce;
+    --navbar-color: #43ABC9;
 }
 html {
-    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Roboto',
-      Roboto, Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI',
-      'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     color: var(--font-color);
     font-weight: 400;
     font-size: 1rem;
@@ -41,7 +32,9 @@ body {
 h1,
 h2,
 strong {
-    color: #333;
+    font-size: 2em;
+    margin: 0.67em 00;
+    color: var(--heading-color);
 }
 h2{
     margin-top: 1em;
@@ -73,7 +66,7 @@ main {
 .navbar a {
     border-radius: 0.35rem;
     margin: 0 0.05rem;
-    color: var(--font-color);
+    color:var(--nav-font-color);
     font-weight: 400;
     font-size: 0.85rem;
     border: 1px solid transparent;
@@ -92,11 +85,27 @@ main {
   
 .navbar a.brand {
     font-weight: 500;
-    color: var(--font-color);
+    color: var(--nav-font-color);
     white-space: nowrap;
     border: none;
     display: flex;
     align-items: center;
     line-height: 1;
     background: transparent;
+}
+
+/* Scaffold */
+a, span.bold {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 700
+}
+
+a:hover {
+    color: var(--link-color-darker)
+}
+
+ul {
+    padding: 0 2rem;
+    margin-top: 3rem;
 }
