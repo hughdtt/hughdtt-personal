@@ -48,6 +48,7 @@ main {
 }
 
 .navbar {
+    font-size: 18px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -56,44 +57,83 @@ main {
     box-shadow: 0 3px 13px rgba(100, 110, 140, 0.1),
         0 2px 4px rgba(100, 110, 140, 0.15);
     z-index: 2;
-    padding: 0.5rem;
+    padding-bottom: 1rem;
 }
 
-.navbar .container .flex {
-    justify-content: space-between;
-}
-  
-.navbar a {
-    border-radius: 0.35rem;
-    margin: 0 0.05rem;
-    color:var(--nav-font-color);
-    font-weight: 400;
-    font-size: 0.85rem;
-    border: 1px solid transparent;
-    padding: 0 0.3rem;
-    background: transparent;
+
+.main-nav {
+    list-style-type: none;
+    display: none;
 }
 
-.navbar button {
-    font-size: 1rem;
-    margin-right: -1rem;
+.nav-links,
+.logo {
+    padding-top: 1rem;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
 }
 
-.navbar a:first-of-type {
-    margin-left: -1rem;
-}
-  
-.navbar a.brand {
-    font-weight: 500;
-    color: var(--nav-font-color);
-    white-space: nowrap;
-    border: none;
-    display: flex;
-    align-items: center;
-    line-height: 1;
-    background: transparent;
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
 }
 
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 1rem;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+}
 /* Scaffold */
 a, span.bold {
     color: var(--link-color);
@@ -105,7 +145,7 @@ a:hover {
     color: var(--link-color-darker)
 }
 
-ul {
+.content ul {
     padding: 0 2rem;
     margin-top: 3rem;
     margin-bottom: -1rem;
