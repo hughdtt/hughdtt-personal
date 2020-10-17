@@ -46,9 +46,15 @@ strong {
     color: var(--medium-font-color);
 }
 
+section h2{
+    margin-top: 0.5em;
+    padding-top: 1em;
+}
+
 section:nth-child(n+3) h2{
     margin-top: 0.5em;
     padding-top: 1em;
+    padding-bottom: 0.5em;
     border-bottom: 1px solid var(--border)
 }
 
