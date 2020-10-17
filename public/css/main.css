@@ -2,17 +2,21 @@
 
 :root {
     --font-color: #495057;
-    --nav-font-color: white;
     --heading-color: #343a40;
-    --background: white;
-    --light-font-color: #858b93;
+    --background: #fff;
     --dark-font-color: #1b1d25;
     --medium-font-color: #60656c;
+    --light-font-color: #858b93;
+    --light-background: #f6f8fb;
+    --lighter-background: #e6e8eb;
     --border: #d6d9de;
-    --bold-color: #107896;
-    --link-color: #858b93;
-    --link-color-darker: #60656c;
-    --navbar-color: #43acc9;
+    --link-color: #5c7cfa;
+    --link-color-darker: #364fc7;
+    --navbar-color: #1b1d25;
+    --blockquote: #edf2ff;
+    --transparent-text: rgba(0,0,0,0.7);
+    --transparent-bg: rgba(0,0,0,0.05);
+    --light-transparent-bg: hsla(0,0%,100%,0.1);
 }
 html {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
@@ -32,16 +36,20 @@ body {
 
 
 h1,
-h2,
-strong {
+h2 {
     font-size: 2em;
     margin: 0.67em 00;
     color: var(--heading-color);
 }
 
-h2{
+strong {
+    color: var(--medium-font-color);
+}
+
+section:nth-child(n+3) h2{
     margin-top: 0.5em;
     padding-top: 1em;
+    border-bottom: 1px solid var(--border)
 }
 
 .lead h3{
