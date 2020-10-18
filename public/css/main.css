@@ -10,8 +10,8 @@
     --light-background: #f6f8fb;
     --lighter-background: #e6e8eb;
     --border: #d6d9de;
-    --link-color: #5c7cfa;
-    --link-color-darker: #364fc7;
+    --link-color: #ab8aff;
+    --link-color-darker:#7c2affef;
     --navbar-color: #24292e;
     --blockquote: #edf2ff;
     --transparent-text: rgba(0,0,0,0.7);
@@ -31,7 +31,6 @@ body {
     margin: 0 auto;
     max-width: 50em;
     padding: 4em 1em;
-    color: #555;
 }
 
 
@@ -125,12 +124,12 @@ main {
         height: 70px;
         align-items: center;
     }
-
     .main-nav {
+        max-width: 50em;
         display: flex;
         margin-right: 30px;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: flex-start;
     }
 
     .main-nav li {
