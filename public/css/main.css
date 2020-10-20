@@ -251,6 +251,34 @@ span.bold{
     margin-bottom: -1rem;
 }
 
+a.button {
+    display: inline-block;
+    border: 2px solid var(--link-color);
+    padding: 0.3rem 0.6rem;
+    margin-right: 0.75rem;
+    font-weight: 500;
+    background: var(--link-color);
+    color: white !important;
+    border-radius: 0.35rem;
+    font-size: 0.9rem;
+}
+  
+a.button:hover{
+    border: 2px solid var(--link-color-darker);
+    background: var(--link-color-darker);
+    color: white;
+}
+  
+@media screen and (min-width: 800px) {
+    a.button {
+      font-size: 0.9rem;
+}
+    a.button.large {
+      padding: 1rem 1.5rem;
+      font-size: 1.1rem;
+    }
+}
+
 /*About-me*/
 .hero {
     display: flex;
@@ -276,3 +304,63 @@ span.bold{
         height: 200px;
     }
 }
+
+/* Projects */
+
+.projects .project:last-of-type {
+    border-bottom-width: 0;
+  }
+  
+  .project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .project .icon {
+    font-size: 1.5rem;
+    width: 40px;
+    margin-right: 1rem;
+  }
+  
+  .project a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.25rem;
+    color: var(--medium-font-color);
+  }
+  
+  .project a:hover h3 {
+    text-decoration: underline;
+  }
+  
+  .project h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+  }
+  
+  .project .description {
+    font-size: 1.1rem;
+    color: var(--light-font-color);
+  }
+  
+  .project a.button {
+    margin-left: 1.5rem;
+  }
+  
+  @media screen and (min-width: 800px) {
+    .project {
+      border-bottom-width: 0;
+    }
+  
+    .project h3 {
+      font-size: 1.3rem;
+    }
+    .project .description {
+      font-size: 1rem;
+    }
+  }
